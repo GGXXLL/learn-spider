@@ -73,8 +73,6 @@ for tag_name, tag_href in tags.items():
                     count += 1
                 else:
                     continue
-                sleep(1)
-            sleep(1)
+                sleep(0.5)
+
         print('\t%d' % count)
-        sleep(1)
-    sleep(1)

@@ -28,14 +28,11 @@ def get_text(query_word):
 
 
 if __name__ == '__main__':
-    while 1:
-        query_word = raw_input('输入词条:')
-        if query_word and query_word != 'quit':
-            text = get_text(query_word)
-            if text:
-                print text
-            else:
-                print '\r\n未检索到{}的信息,请完善或修改词条\r\n'.format(query_word)
-        elif query_word == 'quit':
-            print '\r\n结束搜索'
-            break
+
+    query_word = input('输入词条:')
+    text = get_text(query_word)
+    if text:
+        print(text)
+    else:
+        print('\r\n未检索到{}的信息,请完善或修改词条\r\n'.format(query_word))
+
